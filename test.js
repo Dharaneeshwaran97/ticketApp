@@ -1,5 +1,8 @@
-const {TicketAPI} = require('./TicketApi');
+//import { TicketAPI } from "./TicketApi.js";
 
+
+
+const { TicketAPI } = require("./TicketApi");
 const ticketAPI = new TicketAPI();
-let trains = ticketAPI.search("Chennai Central","Bangalore","2021-02-02");
+let trains = ticketAPI.search("Chennai Central", "Bangalore", "2021-02-02");
 console.log(trains);
